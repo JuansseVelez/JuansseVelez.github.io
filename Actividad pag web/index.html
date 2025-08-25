@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monster Truck Medellín 2025</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #111;
+      color: crimson;
+    }
+
+    h2,
+    p {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      height: 400px;
+      margin: 20px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    }
+
+    .slides {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .slide.activa {
+      opacity: 1;
+    }
+
+    .navigation {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      padding: 0 20px;
+    }
+
+    .navigation button {
+      background: rgba(0, 0, 0, 0.6);
+      color: crimson;
+      border: none;
+      border-radius: 50%;
+      padding: 10px 15px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+
+    table {
+      border-collapse: collapse;
+      margin: 20px auto;
+      width: 80%;
+      background: #222;
+      color: crimson;
+    }
+
+    table th,
+    table td {
+      border: 1px solid #555;
+      padding: 12px;
+      text-align: center;
+    }
+
+    table th {
+      background: #444;
+    }
+
+
+    form {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    form input,
+    form textarea {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background: crimson;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+
+    footer {
+      background: #222;
+      padding: 20px;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    footer img {
+      margin: 0 10px;
+      transition: transform 0.3s;
+    }
+
+    footer img:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>MONSTER TRUCK MEDELLÍN 2025!!</h2>
+    <p style="font-size:18px;">
+      Llega a MEDELLÍN el show más impactante en su exitosa gira por Colombia...
+      <b>Las MONSTER TRUCK</b>, camionetas gigantes aplastando todo a su paso,<br>
+      verás motos volando en el show de Freestyle Motocross, además lo mejor del BMX y Stunt.
+    </p>
+
+
+    <div class="carousel">
+      <div class="slides">
+        <div class="slide activa"><img
+            src="https://offloadmedia.feverup.com/guadalajarasecreta.com/wp-content/uploads/2024/11/19124442/Hot-Wheels-1024x683.jpg"
+            alt="Imagen 1"></div>
+        <div class="slide"><img
+            src="https://i0.wp.com/tolucalabellacd.com/wp-content/uploads/2024/03/costo-de-boletos-show-monster-truck-toluca-2024.jpg?fit=1200%2C750&ssl=1"
+            alt="Imagen 2"></div>
+        <div class="slide"><img
+            src="https://i.ytimg.com/vi/fbfB4GihOdk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDp1GnY44FNkV-pvPf59W_IvZrcBA"
+            alt="Imagen 3"></div>
+        <div class="slide"><img src="https://mudpiefridays.com/wp-content/uploads/2023/01/IMG_3915.jpg" alt="Imagen 4"></div>
+        <div class="slide"><img src="https://img.grouponcdn.com/deal/2AYDAJirGMJSjaooz5crhWroej7/2A-4841x3227/v1/sc600x600.webp" alt="Imagen 5"></div>
+      </div>
+      <div class="navigation">
+        <button onclick="cambiarSlide(-1)">&#10094;</button>
+        <button onclick="cambiarSlide(1)">&#10095;</button>
+      </div>
+    </div>
+
+
+    <table>
+      <tr>
+        <th>📅 Fecha</th>
+        <td>Dom • Oct 19 • 2025</td>
+      </tr>
+      <tr>
+        <th>⏰ Hora</th>
+        <td>4:00 PM</td>
+      </tr>
+      <tr>
+        <th>📛 Ingreso</th>
+        <td>02 : 00 PM</td>
+      </tr>
+      <tr>
+        <th>🙋‍♂️ Responsable</th>
+        <td>ADSO Logística JJ</td>
+      </tr>
+      <tr>
+        <th>📍 Ubicación</th>
+        <td>
+          Cra. 63A #45a-48, Laureles<br>
+          <button onclick="document.getElementById('mapa').style.display='block'">Más detalles</button>
+        </td>
+      </tr>
+    </table>
+
+
+    <div id="mapa" style="display:none; text-align:center;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.108286967268!2d-75.58510321512883!3d6.249459510160403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429074ecff633%3A0x9986f9dfbac17443!2sLa%20Macarena!5e0!3m2!1ses!2sco!4v1755615286903!5m2!1ses!2sco"
+        width="600" height="450"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!4v1755836218031!6m8!1m7!1s2Lhju0y9iuEHuFnCrqunyw!2m2!1d6.249434112036642!2d-75.58010493240855!3f277.41754!4f0!5f0.7820865974627469"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+    <h2>📩 CONTÁCTANOS</h2>
+    <form>
+      <label for="nombre">Ingresa tu nombre</label><br>
+      <input type="text" id="nombre" required><br>
+
+      <label for="correo">Ingresa tu correo</label><br>
+      <input type="email" id="correo" required><br>
+
+      <label for="mensaje">Cuéntanos qué sucede</label><br>
+      <textarea id="mensaje" rows="5"></textarea><br>
+
+      <button type="submit">Enviar correo</button>
+    </form>
+
+
+    <table>
+      <tr>
+        <th>Localidad</th>
+        <th>Precio</th>
+      </tr>
+      <tr>
+        <td>Parte de abajo</td>
+        <td>$250.000</td>
+      </tr>
+      <tr>
+        <td>Parte media</td>
+        <td>$200.000</td>
+      </tr>
+      <tr>
+        <td>Parte de arriba</td>
+        <td>$150.000</td>
+      </tr>
+    </table>
+  </div>
+
+
+  <footer>
+    <p>Síguenos en nuestras redes sociales:</p>
+    <a href="https://www.facebook.com/Taquillalive-105363078634236" target="_blank">
+      <img src="https://img.icons8.com/?size=100&id=118467&format=png&color=ffffff" alt="Facebook" width="40">
+    </a>
+    <a href="https://www.instagram.com/taquillalive/" target="_blank">
+      <img src="https://img.icons8.com/?size=100&id=ZRiAFreol5mE&format=png&color=ffffff" alt="Instagram" width="40">
+    </a>
+    <a href="https://twitter.com/taquillalive/" target="_blank">
+      <img src="https://img.icons8.com/?size=100&id=13963&format=png&color=ffffff" alt="Twitter" width="40">
+    </a>
+    <p><mark>Juan Esteban Rojas Tolosa</mark> | <mark>Juan Sebastián Ramírez Vélez</mark></p>
+  </footer>
+
+  <script>
+    let indice = 0;
+    const slides = document.querySelectorAll(".slide");
+
+    function cambiarSlide(direccion) {
+      slides[indice].classList.remove("activa");
+      indice = (indice + direccion + slides.length) % slides.length;
+      slides[indice].classList.add("activa");
+    }
+  </script>
+</body>
+
+</html>
